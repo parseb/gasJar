@@ -1,6 +1,6 @@
-GAS Refund tip.
+## GAS Refund Tip/Protocol Financing Model
 
-Call contract to 'deposit' refunable gas and give the rights to delete to a third party.
+ Call/All Calls to contract to 'deposit' refunable gas and give the rights to delete to a third party.
 
 - the thrid party should be able to prove the ownership over the gas refund
 - the third party should be able to sell/alienate the right to materialize the gas refund
