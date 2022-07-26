@@ -7,6 +7,8 @@
 
 Core idea: what if gas refunds can be currency.. like ETH but for web3.
 Call Contract -> Contract instructions: -delete all of this - get gas refund - if enough gas deploy this contract (kindof logic) 
+Would make sense for it to be a modifer.
+
 - can such an asset be defi composable?
 - can deletion rights over unaccesed data be a way of financing a protocol? (gas refund)
 
