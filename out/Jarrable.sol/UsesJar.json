@@ -1,0 +1,301 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_prev",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_next",
+          "type": "address"
+        }
+      ],
+      "name": "jarOnwerChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_nr",
+          "type": "uint256"
+        }
+      ],
+      "name": "plusOne",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_o",
+          "type": "address"
+        }
+      ],
+      "name": "setJarOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600180546001600160a01b031916331790556101b9806100326000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806393ba9e911461003b578063f5a6259f14610050575b600080fd5b61004e610049366004610114565b610075565b005b61006361005e366004610144565b6100e5565b60405190815260200160405180910390f35b6001546001600160a01b031661008a57600080fd5b600180546001600160a01b0319166001600160a01b0383169081179091556040805133815260208101929092527f7caa4f27eee97aca0662aee6a49aade586392f149adf53298e4243ceb9133eaa910160405180910390a150565b6001546000906001600160a01b03166101095761010382600161015d565b92915050565b61010382600161015d565b60006020828403121561012657600080fd5b81356001600160a01b038116811461013d57600080fd5b9392505050565b60006020828403121561015657600080fd5b5035919050565b6000821982111561017e57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212208a6470b1df348f717b977197f7086f46499db40e19a212a22f7cddc21cb8c8fc64736f6c634300080f0033",
+    "sourceMap": "89:123:1:-:0;;;;;;;;;;;;-1:-1:-1;362:8:0;:21;;-1:-1:-1;;;;;;362:21:0;373:10;362:21;;;89:123:1;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806393ba9e911461003b578063f5a6259f14610050575b600080fd5b61004e610049366004610114565b610075565b005b61006361005e366004610144565b6100e5565b60405190815260200160405180910390f35b6001546001600160a01b031661008a57600080fd5b600180546001600160a01b0319166001600160a01b0383169081179091556040805133815260208101929092527f7caa4f27eee97aca0662aee6a49aade586392f149adf53298e4243ceb9133eaa910160405180910390a150565b6001546000906001600160a01b03166101095761010382600161015d565b92915050565b61010382600161015d565b60006020828403121561012657600080fd5b81356001600160a01b038116811461013d57600080fd5b9392505050565b60006020828403121561015657600080fd5b5035919050565b6000821982111561017e57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212208a6470b1df348f717b977197f7086f46499db40e19a212a22f7cddc21cb8c8fc64736f6c634300080f0033",
+    "sourceMap": "89:123:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;510:141:0;;;;;;:::i;:::-;;:::i;:::-;;122:88:1;;;;;;:::i;:::-;;:::i;:::-;;;636:25:2;;;624:2;609:18;122:88:1;;;;;;;510:141:0;564:8;;-1:-1:-1;;;;;564:8:0;555:32;;;;;;592:8;:13;;-1:-1:-1;;;;;;592:13:0;-1:-1:-1;;;;;592:13:0;;;;;;;;616:31;;;632:10;884:34:2;;949:2;934:18;;927:43;;;;616:31:0;;819:18:2;616:31:0;;;;;;;510:141;:::o;122:88:1:-;417:8:0;;173:4:1;;-1:-1:-1;;;;;417:8:0;413:88;;196:7:1::1;200:3:::0;196:1:::1;:7;:::i;:::-;189:14:::0;122:88;-1:-1:-1;;122:88:1:o;413::0:-;196:7:1::1;200:3:::0;196:1:::1;:7;:::i;14:286:2:-:0;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:2;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:2:o;305:180::-;364:6;417:2;405:9;396:7;392:23;388:32;385:52;;;433:1;430;423:12;385:52;-1:-1:-1;456:23:2;;305:180;-1:-1:-1;305:180:2:o;981:225::-;1021:3;1052:1;1048:6;1045:1;1042:13;1039:136;;;1097:10;1092:3;1088:20;1085:1;1078:31;1132:4;1129:1;1122:15;1160:4;1157:1;1150:15;1039:136;-1:-1:-1;1191:9:2;;981:225::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "plusOne(uint256)": "f5a6259f",
+    "setJarOwner(address)": "93ba9e91"
+  },
+  "ast": {
+    "absolutePath": "src/Jarrable.sol",
+    "id": 85,
+    "exportedSymbols": {
+      "GasJar": [
+        64
+      ],
+      "UsesJar": [
+        84
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:173:1",
+    "nodes": [
+      {
+        "id": 66,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:1",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 67,
+        "nodeType": "ImportDirective",
+        "src": "65:22:1",
+        "absolutePath": "src/GasJar.sol",
+        "file": "./GasJar.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 85,
+        "sourceUnit": 65,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 84,
+        "nodeType": "ContractDefinition",
+        "src": "89:123:1",
+        "nodes": [
+          {
+            "id": 83,
+            "nodeType": "FunctionDefinition",
+            "src": "122:88:1",
+            "body": {
+              "id": 82,
+              "nodeType": "Block",
+              "src": "179:31:1",
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 80,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "hexValue": "31",
+                      "id": 78,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "196:1:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "+",
+                    "rightExpression": {
+                      "id": 79,
+                      "name": "_nr",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 71,
+                      "src": "200:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "196:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 77,
+                  "id": 81,
+                  "nodeType": "Return",
+                  "src": "189:14:1"
+                }
+              ]
+            },
+            "functionSelector": "f5a6259f",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 74,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 73,
+                  "name": "isJar",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 38,
+                  "src": "156:5:1"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "156:7:1"
+              }
+            ],
+            "name": "plusOne",
+            "nameLocation": "131:7:1",
+            "parameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 71,
+                  "mutability": "mutable",
+                  "name": "_nr",
+                  "nameLocation": "144:3:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "139:8:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 70,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "139:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:10:1"
+            },
+            "returnParameters": {
+              "id": 77,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 76,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "173:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 75,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "173:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "172:6:1"
+            },
+            "scope": 84,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 68,
+              "name": "GasJar",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 64,
+              "src": "109:6:1"
+            },
+            "id": 69,
+            "nodeType": "InheritanceSpecifier",
+            "src": "109:6:1"
+          }
+        ],
+        "canonicalName": "UsesJar",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          84,
+          64
+        ],
+        "name": "UsesJar",
+        "nameLocation": "98:7:1",
+        "scope": 85,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 1
+}
