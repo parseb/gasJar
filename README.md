@@ -1,3 +1,7 @@
+#### Very much possible, makes sense to store ETH as gas as it differs from the asset and provides protocol native funding potential among other use cases. However there's a few issues to account for. Currently miners are protected so that refunds are capped. Also likely for selfedestruct to be removed.. probably in order to make the popular upgradability stuff more reliable.
+
+## See https://gastoken.io/ for a robust `selfdestruct`-based implementation
+
 ## GAS Refund Tip/Protocol Financing Model
 
  Call/All Calls to contract to 'deposit' refunable gas and give the rights to delete to a third party.
