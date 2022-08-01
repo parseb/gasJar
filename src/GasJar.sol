@@ -6,14 +6,21 @@ pragma solidity ^0.8.13;
 /// @dev Experimental PlayyThing. Do not use.
 /// @custom:security contact: petra306@protonmail.com
 /// @author parseb (https://github.com/parseb/gasjar/src/GasJar.sol)
-abstract contract GasJar {
+
+
+/// @dev found much_and_very_great implementation at gastoken.io
+/// https://github.com/projectchicago/gastoken
+/// THE END
+import "openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+
+abstract contract GasJar is ERC20("GasJar", "GAZ") {
 
 uint immutable MAXU = type(uint).max -2;
-/// 
+/// OpenZeppelin/openzeppelin-contracts
 mapping(bytes4 => uint) sigInterations;
 mapping(address => uint[]) shelf;
 address public jarOwner;
-
+bool flippy;
 /// temp, maybe
 uint[3] gassy; 
 
@@ -30,7 +37,7 @@ uint[3] gassy;
     } else {
       gassy[1] = gasleft();
       // odo the do and render true
-      _doTheDo(jarOwner, sigInterations[msg.sig]);
+      _doConserve(jarOwner, sigInterations[msg.sig]);
       _;
       gassy[2] = gasleft();
     }
@@ -53,13 +60,25 @@ uint[3] gassy;
  }
 
 
-function _doTheDo(address to_, uint iterNum_) private {
+function _doConserve(address to_, uint iterNum_) private {
   uint i = 1;
   for (i; i < iterNum_;) {
     shelf[to_].push( MAXU / i );
     unchecked { ++i; }
   }
+  _mint(jarOwner, iterNum);
+
 }
+
+
+function wildCall(address contractAddr_, bytes memory callBytes) private returns (bytes memory rr) {
+  require(! flippy);
+  flippy = true;
+  delete[]
+  require(contractaddress_.call(callBytes));
+  flippy = false;
+} 
+
 
 function getGassy() external view returns (uint[3] memory zzz){
   zzz[0] = gassy[0];
